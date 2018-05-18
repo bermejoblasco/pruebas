@@ -15,7 +15,8 @@ After login we need follow the next steps:
 
  1. Choose Add an app
   
-	![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\AddApplication.png))
+    ![alt text](pruebas/labs-pr/Drive user engagement across all your devices with Microsoft Graph/media/AddApplication.png) 
+	
 
 	> **Note**: If you signed in with a work or school account, select the **Add an app** button for **Converged applications**.
 
