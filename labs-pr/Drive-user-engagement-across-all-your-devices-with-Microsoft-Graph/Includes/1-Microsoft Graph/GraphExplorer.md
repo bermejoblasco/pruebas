@@ -27,7 +27,7 @@ On the right side we have the view with everything we need to launch the calls a
 
 Now we will see how test Graph API in Microsoft Graph Explorer to get all files in One Drive and how we can manage our pemrisions.
 
-## odify user premissions
+## Modify user premissions
 
 In order to use and access the different services, we can modify the permissions of our user to give him the necessary privileges to be able to use the desired operations.
 
