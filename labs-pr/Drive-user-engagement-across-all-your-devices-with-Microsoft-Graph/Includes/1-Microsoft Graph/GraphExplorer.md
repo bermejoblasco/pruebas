@@ -1,14 +1,13 @@
 # Graph Explorer
 
-Graph Explorer is a tool that allows us to explore and test Graph APIS.
+Graph Explorer is a tool that allows us to explore and test Microsoft Graph API.
 Next we are going to make an intrusion to this tool.
 
-##Sign in Graph Explorer
+## Sign in Graph Explorer
 
 Go to **[Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)** and click in Sign in Wiht Microsoft button. 
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\LoginGraphApi.png))
-
+ ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/LoginGraphApi.png) 
 
 > Note: You will need login with a [school or work](https://developer.microsoft.com/en-us/office/dev-program) or [Microsoft account](https://signup.live.com/signup?wa=wsignin1.0&ct=1473983465&rver=6.6.6556.0&wp=MBI_SSL&wreply=https://outlook.live.com/owa/&id=292841&CBCXT=out&cobrandid=90015&bk=1473983466&uiflavor=web&uaid=3b7bae8746264c1bacf1db2b315745cc&mkt=EN-US&lc=1033&lic=1)
 
@@ -33,12 +32,12 @@ In order to use and access the different services, we can modify the permissions
 
 - Choose Modify Permissions
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\GEModifyPermissions.png))
+ ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GEModifyPermissions.png) 
 
 
 - Now we can see the list of permissions and you can add or remove it.
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\GESelectPermissions.png))
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GESelectPermissions.png) 
 
 
 ##Acitvate OneDrive in Sample Categories
@@ -49,17 +48,16 @@ Now we are going to add the OneDrive APIS to Graph Explorer to be able to call t
 
 - Choose show more samples.
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\GEShowMoreExamples.png))
-
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GEShowMoreExamples.png) 
 
 - Find OneDrive and activate. 
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\GESelectOneDrive.png))
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GESelectOneDrive.png) 
 
 
 - Now OneDrive APIS are included in Graph Explorer.
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\GEShowOneDriveSamples.png))
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GEShowOneDriveSamples.png) 
 
 
 ##Get all item in my drive
@@ -69,4 +67,4 @@ We are ready to get all items from OneDrive
 - Select in left menu **all the items in my drive** under **OneDrive** section
 - Automatically Graph Explorer send call to OneDrive API and show the results.
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\GEGetAllODItems.png))
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GEGetAllODItems.png) 
