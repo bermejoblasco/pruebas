@@ -1,6 +1,6 @@
 # 1 - Microsoft Graph
 
- - [Intro to graph](IntroToGraph.md)
+ - [Intro to graph](Introtograph.md)
 	 - Brief explanation of what is Graph
 	 - Why its usefulness
 	 - Interest links
