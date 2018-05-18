@@ -1,6 +1,8 @@
 # Writing data to one drive
-So far we have seen how to obtain data through Microsoft Graph, specifically OneDrive.
+Until now, we have seen how to obtain data through Microsoft Graph, specifically OneDrive.
+
 Now we will see how we can also use Microsoft Grap to save data, in this case we will select a file and upload it to OneDrive through its Microsoft Graph API.
+
 Let's go for it
 
 ## Set file in OneDrive from Graph API.
@@ -46,7 +48,9 @@ In UWP project go to **OneDriverHelper.cs** UploadItem method and follow the ste
 
 - Click in Log In button to authenticate.
 
-- After the authentication appears a ** Select File** button. Choose in this button.
+- After the authentication choose ** Upload file to OneDrive ** button.
+
+- Click in ** Select File** button.
 
 - Select file from your computer.
 
@@ -55,3 +59,5 @@ In UWP project go to **OneDriverHelper.cs** UploadItem method and follow the ste
 - Open your OneDrive and you can see the file in Hol/Graph/ folder
 
 > **Note:** If you want to upload large files visit this [link](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/api/driveitem_createuploadsession).
+
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/UploadFileOD.png) 
