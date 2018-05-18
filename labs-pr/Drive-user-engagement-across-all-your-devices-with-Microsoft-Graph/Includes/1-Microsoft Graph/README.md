@@ -15,9 +15,9 @@
 	 - Modify user premissions
 	 - Acitvate OneDrive in Sample Categories
 	 - Get all item in my drive
- - [Sample API calls](SampleApiCalls)
+ - [Sample API calls](SampleApiCalls.md)
 	 - Create a console app
 	 - Authenticate user
 	 - Get call to Get all items in OneDrive
- - [Adding API calls to your project](AddingAPI)
+ - [Adding API calls to your project](AddingAPI.md)
 	 - Add user authentication with Graph
