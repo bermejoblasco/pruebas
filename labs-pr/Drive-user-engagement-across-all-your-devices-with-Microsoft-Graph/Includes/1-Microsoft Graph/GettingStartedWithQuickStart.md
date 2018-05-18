@@ -15,35 +15,35 @@ After login we need follow the next steps:
 
  1. Choose Add an app
   
-    ![alt text](pruebas/labs-pr/Drive user engagement across all your devices with Microsoft Graph/media/AddApplication.png) 
+    ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/AddApplication.png) 
 	
 
 	> **Note**: If you signed in with a work or school account, select the **Add an app** button for **Converged applications**.
 
  2. Enter an app name and click **Create**
-
-	![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\RegisterApp.png))
+	
+	![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/RegisterApp.png) 
 
 	> **Note**: After create the page display a list of properties	
 
 
- 3. Copy the Application Id and save, we  will need it later
- 
-	![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\ApplicationID.png))
+ 3. Copy the Application Id and save, we  will need it later 
+	
+	![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/ApplicationID.png) 
 
 	> **Note**: We will nedd the **Application Id** to configure our app.	
 
- 4. Now, we click in Add Platform and select Native Application 
+ 4. Now, we click in Add Platform and select Native Application 	
 	
-	![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\NativeApplication.png))
+	![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/NativeApplication.png) 
 
 	> **Note**: In our case we select **Native Applicatio**n becuase we will use a **UWP app**
 
- 5. The Built-in redirect URI value has been created automatically. We copy that we'll need it later.
+ 5. The Built-in redirect URI value has been created automatically. We copy that we'll need it later. 
+	
+	![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/RedirectUri.png) 
  
-	![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\RedirectUri.png))
- 
-6. Finally, we click in save. 
+ 6. Finally, we click in save. 
 
 ## Choosing base project
 
@@ -80,4 +80,4 @@ To Build and run the applications follow this steps.
 
 If everything goes fine you will see:
 
-![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\applicationrun.png))
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/applicationrun.png) 
