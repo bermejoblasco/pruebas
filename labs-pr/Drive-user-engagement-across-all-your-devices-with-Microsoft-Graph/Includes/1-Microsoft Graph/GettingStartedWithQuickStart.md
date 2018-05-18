@@ -1,5 +1,5 @@
 # Getting Started with Quick Start
-So that our applications can use the Microsoft Graph API we have to have an App Id, 
+Our applications can use the Microsoft Graph API we have to have an App Id, 
 For this we have to register the application in Microsoft Application Registration.
 Lest's create it. 
 
