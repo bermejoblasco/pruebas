@@ -2,7 +2,7 @@
 
 Now we have an overview about how work with Microsoft Graph. Now we will back to our UWP and go to add Authentication user.
 
-##Add user authentication with Graph
+## Add user authentication with Graph
 Open UWP code in Visual Studio and follow this steps.
 
 - Go to AuthenticationHelper.cs
@@ -12,7 +12,7 @@ Open UWP code in Visual Studio and follow this steps.
 
 - Add the following code
 
-			if (graphClient == null)
+		if (graphClient == null)
             {
                 // Create Microsoft Graph client.
                 try
@@ -40,4 +40,4 @@ As you can see it is exactly the same code that we used in the console applicati
 
 > **Note:** In previous steps we had configured the **ClientID** and **ReturnURL** field in the App.xaml file, check that you have added them correctly.
 
-Now you run the application and click in **Log in** button to authenticate
+Now you run the application and click in **Log in** button to authenticate.

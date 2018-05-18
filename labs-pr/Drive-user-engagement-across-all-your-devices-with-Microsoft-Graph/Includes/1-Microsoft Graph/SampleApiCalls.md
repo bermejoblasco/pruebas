@@ -1,13 +1,15 @@
-#Sample API calls
+# Sample API calls
 
 At this point we are ready to interact with Microsoft Graph.
-To do this we will create a console application to which we will add the necessary code to perform authentication using Microsoft Graph and then we will list all the documents that we have in OneDrive.
 
-##Create a console app
+To do this we will create a console application to which we add the necessary code to perform authentication using Microsoft Graph and then we will list all the documents that we have in OneDrive.
 
-Download the base project from [here](http://github.com) **TOOD: Cambiar el link por el que toca**
+## Create a console app
 
-##Authenticate user
+Download the base project from [here](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/src/Microsoft.Graph.HOL.ConsoleBase/)
+
+## A uthenticate user
+
 Now let's add the authentication.
 
 - In App.config add
@@ -28,7 +30,7 @@ Now let's add the authentication.
 
 - Add the following code
 
-			try
+	      try
             {
                 graphClient = new GraphServiceClient(
                     "https://graph.microsoft.com/v1.0",
@@ -50,13 +52,13 @@ Now let's add the authentication.
             return graphClient;
 
 You can see that we use the Graph Service Client to authenticate, obtain the token, and later access all of Graph resources through this class found in the Microsoft.Graph NuGet package.
-The method **GetTokenForUserAsync** obtain the access token after the user are authenticated to send in Authentication header when call the API..
+The method **GetTokenForUserAsync** obtain the access token after the user are authenticated to send in Authentication header when call the API.
 
 Now you can build and run the process and the application aks for user credentials via Graph.
 When you are authenticated, please answer **N** to the answer **Would you like to see your OneDrive items?[Y] Yes or [N] No**
 
 
-##Get call to Get all items in OneDrive
+## Get call to Get all items in OneDrive
 Now we ready to make calls to the API, we will call OneDrive API to show the name of the documents we have.
 
 
@@ -70,7 +72,7 @@ For call to **OneDrive** follow the next steps:
 	`throw new NotImplementedException();`
 -  Add the this code:
  			
-			List<string> filesName = new List<string>();
+	       List<string> filesName = new List<string>();
 
             try
             {
@@ -88,8 +90,7 @@ For call to **OneDrive** follow the next steps:
                 throw;
             }
 
-There are few interesting points:
-
+There are few interesting points in the code before:
 
 - We call the authentication method to obtain the Graph context with the authenticated user.
 - After that we can access the different GRAPH resources of the user.
