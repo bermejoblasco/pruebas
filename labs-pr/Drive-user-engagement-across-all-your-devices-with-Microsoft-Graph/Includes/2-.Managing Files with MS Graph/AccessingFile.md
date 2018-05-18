@@ -34,5 +34,4 @@ In UWP project go to **OneDriverHelper.cs** GetRecentItems method and follow the
 - After the authentication appears a **Recent File OneDrive** button. Click in this button.
 - Appear in the applications the first ten documents that have been modified recently
 
-
-**- //TODO: ADD PICTURE.**![Create App](![alt text](C:\Projects\Spike\labs-pr\Drive user engagement across all your devices with Microsoft Graph\media\AddApplication.png))
+![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/RegisterApp.png) 
