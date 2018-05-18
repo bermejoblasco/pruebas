@@ -1,7 +1,8 @@
 # Getting Started with Quick Start
-Our applications can use the Microsoft Graph API we have to have an App Id, 
-For this we have to register the application in Microsoft Application Registration.
-Lest's create it. 
+Our applications can use the Microsoft Graph API.
+For this we must have an application ID.
+For this we must register the application in the Microsoft Application Registry.ç
+We are going to create it. 
 
 > Note: You will need either a [school or work](https://developer.microsoft.com/en-us/office/dev-program) or [Microsoft account](https://signup.live.com/signup?wa=wsignin1.0&ct=1473983465&rver=6.6.6556.0&wp=MBI_SSL&wreply=https://outlook.live.com/owa/&id=292841&CBCXT=out&cobrandid=90015&bk=1473983466&uiflavor=web&uaid=3b7bae8746264c1bacf1db2b315745cc&mkt=EN-US&lc=1033&lic=1)
 
@@ -27,11 +28,11 @@ After login we need follow the next steps:
 	> **Note**: After create the page display a list of properties	
 
 
- 3. Copy the Application Id and save, we  will need it later 
+ 3. Copy the Application Id and save, we will need it later 
 	
 	![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/ApplicationID.png) 
 
-	> **Note**: We will nedd the **Application Id** to configure our app.	
+	> **Note**: We will need the **Application Id** to configure our app.	
 
  4. Now, we click in Add Platform and select Native Application 	
 	
@@ -51,11 +52,11 @@ Now we will download the UWP application. We will use it and configure it with t
 
 #### Download UWP project from Github 
 
-Download project form [Github Repo](https://github.com/) **TODO: Change for url Github Repo!!!**
+Download project form [here](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/src/Microsoft.GraphBase/) 
 
 #### Build and Debug
 
-No we configure the app with Application Id and Redirect URI.
+Now we configure the app with Application Id and Redirect URI.
 Open App.xaml file and add this code
 
 	<Application.Resources>
@@ -65,7 +66,7 @@ Open App.xaml file and add this code
 
 > Change **ENTERYOURCLIENTID** for your Applicatoion Id and **ENTERYOURREDIRECTURI** for de Redreict uri we save before
 
-For run the app you be this set  up:
+To run the application you must have the following configuration:
 
 1. Install [Visual Studio Community 2017](https://www.visualstudio.com/vs/) or [Visual Studio Enterprise 2017](https://www.visualstudio.com/vs/).
 2. Verify Windows 10 [development mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#accessing-settings-for-developers) is enabled.
