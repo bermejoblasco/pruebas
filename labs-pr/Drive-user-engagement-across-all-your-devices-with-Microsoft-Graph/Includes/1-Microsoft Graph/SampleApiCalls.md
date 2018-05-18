@@ -1,13 +1,14 @@
-#Sample API calls
+# Sample API calls
 
 At this point we are ready to interact with Microsoft Graph.
-To do this we will create a console application to which we will add the necessary code to perform authentication using Microsoft Graph and then we will list all the documents that we have in OneDrive.
 
-##Create a console app
+To do this we will create a console application to which we add the necessary code to perform authentication using Microsoft Graph and then we will list all the documents that we have in OneDrive.
 
-Download the base project from [here](http://github.com) **TOOD: Cambiar el link por el que toca**
+## Create a console app
 
-##Authenticate user
+Download the base project from [here](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/src/Microsoft.Graph.HOL.ConsoleBase/)
+
+##A uthenticate user
 Now let's add the authentication.
 
 - In App.config add
