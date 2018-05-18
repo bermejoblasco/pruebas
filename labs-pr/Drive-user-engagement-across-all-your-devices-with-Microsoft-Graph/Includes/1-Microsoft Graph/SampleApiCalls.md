@@ -30,7 +30,7 @@ Now let's add the authentication.
 
 - Add the following code
 
-	      ry
+	      try
             {
                 graphClient = new GraphServiceClient(
                     "https://graph.microsoft.com/v1.0",
@@ -72,7 +72,7 @@ For call to **OneDrive** follow the next steps:
 	`throw new NotImplementedException();`
 -  Add the this code:
  			
-	      List<string> filesName = new List<string>();
+	       List<string> filesName = new List<string>();
 
             try
             {
