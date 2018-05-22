@@ -1,22 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
+﻿
 namespace Microsoft.Graph.HOL
 {
+    using System;
+    using Windows.ApplicationModel;
+    using Windows.ApplicationModel.Activation;
+    using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Controls;
+    using Windows.UI.Xaml.Navigation;
+
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
@@ -95,6 +86,54 @@ namespace Microsoft.Graph.HOL
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+            if (args.Kind == ActivationKind.Protocol)
+            {
+                if (args is ProtocolActivatedEventArgs protocolEventArgs)
+                {
+                    var root = new Frame();
+                    Window.Current.Content = root;
+
+                    switch (protocolEventArgs.Uri.Host)
+                    {
+                        case "recentfiles":
+                            root.Navigate(typeof(MainPage),"RecentFiles");
+                            break;
+                        case "uploadfile":
+                            root.Navigate(typeof(MainPage), "UploadFile");
+                            break;
+                        case "downloadfile":
+                            root.Navigate(typeof(MainPage), "DownloadFile");
+                            break;
+                        case "contentfile":
+                            root.Navigate(typeof(MainPage), "ContentFile");
+                            break;
+                        case "outlookcontacts":
+                            root.Navigate(typeof(MainPage), "OutlookContacts");
+                            break;
+                        case "scheduleevent":
+                            root.Navigate(typeof(MainPage), "ScheduleEvent");
+                            break;
+                        case "userextension":
+                            root.Navigate(typeof(MainPage), "UserExtension");
+                            break;
+                        case "saveappdata":
+                            root.Navigate(typeof(MainPage), "SaveAppData");
+                            break;
+                        case "activity":
+                            root.Navigate(typeof(MainPage), "Activity");
+                            break;                        
+                        default:
+                            root.Navigate(typeof(MainPage), string.Empty);               
+                            break;
+                    }
+
+                    Window.Current.Activate();
+                }
+            }
         }
     }
 }

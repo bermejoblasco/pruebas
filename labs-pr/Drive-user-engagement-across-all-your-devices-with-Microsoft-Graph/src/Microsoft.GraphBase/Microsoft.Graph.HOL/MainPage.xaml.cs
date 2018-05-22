@@ -14,7 +14,7 @@
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
-    {    
+    {
         public static ApplicationDataContainer _settings = ApplicationData.Current.RoamingSettings;
 
         public MainPage()
@@ -61,22 +61,11 @@
         {
             try
             {
+                UserExtensionHelper.PickupWhereYouLeft(item.Tag.ToString());
                 switch (item.Tag)
                 {
                     case "LogIn":
-                        var graphClient = AuthenticationHelper.GetAuthenticatedClient();
-                        if (graphClient != null)
-                        {
-                            var user = await graphClient.Me.Request().GetAsync();
-                            NavView.Header = $"HI! {user.DisplayName}, Welcome to Microsoft Graph HOL";
-                            login.Visibility = Visibility.Collapsed;
-                            logout.Visibility = Visibility.Visible;
-                            RecentFiles.Visibility = Visibility.Visible;
-                            UploadFile.Visibility = Visibility.Visible;
-                            DownloadFile.Visibility = Visibility.Visible;
-                            ContentFile.Visibility = Visibility.Visible;
-                        }
-
+                        await LoginUser();
                         break;
                     case "LogOut":
                         AuthenticationHelper.SignOut();
@@ -86,6 +75,11 @@
                         UploadFile.Visibility = Visibility.Collapsed;
                         DownloadFile.Visibility = Visibility.Collapsed;
                         ContentFile.Visibility = Visibility.Collapsed;
+                        OutlookContacts.Visibility = Visibility.Collapsed;
+                        ScheduleEvent.Visibility = Visibility.Collapsed;
+                        UserExtension.Visibility = Visibility.Collapsed;
+                        SaveAppData.Visibility = Visibility.Collapsed;
+                        Activity.Visibility = Visibility.Collapsed;
                         break;
                     case "RecentFiles":
                         ContentFrame.Navigate(typeof(RecentOneDriveFiles));
@@ -99,11 +93,58 @@
                     case "ContentFile":
                         ContentFrame.Navigate(typeof(ContentFileOneDrive));
                         break;
+                    case "OutlookContacts":
+                        ContentFrame.Navigate(typeof(OutlookContacts));
+                        break;
+                    case "ScheduleEvent":
+                        ContentFrame.Navigate(typeof(ScheduleEventOutlook));
+                        break;
+                    case "UserExtension":
+                        ContentFrame.Navigate(typeof(UserExtension));
+                        break;
+                    case "SaveAppData":
+                        ContentFrame.Navigate(typeof(SaveAppData));
+                        break;
+                    case "Activity":
+                        ContentFrame.Navigate(typeof(ActivityGraph));
+                        break;
                 }
             }
             catch (Exception ex)
             {
                 NavView.Header = $"And error ocurred: {ex}";
+            }
+        }
+
+        private async Task LoginUser()
+        {
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                if (graphClient != null)
+                {
+                    var user = await graphClient.Me.Request().GetAsync();
+                    NavView.Header = $"HI! {user.DisplayName}, Welcome to Microsoft Graph HOL";
+                    login.Visibility = Visibility.Collapsed;
+                    logout.Visibility = Visibility.Visible;
+                    RecentFiles.Visibility = Visibility.Visible;
+                    UploadFile.Visibility = Visibility.Visible;
+                    DownloadFile.Visibility = Visibility.Visible;
+                    ContentFile.Visibility = Visibility.Visible;
+                    OutlookContacts.Visibility = Visibility.Visible;
+                    ScheduleEvent.Visibility = Visibility.Visible;
+                    UserExtension.Visibility = Visibility.Visible;
+                    SaveAppData.Visibility = Visibility.Visible;
+                    Activity.Visibility = Visibility.Visible;
+                }
+            }
+            catch (NotImplementedException ex)
+            {
+                NavView.Header = $"Register you app and add credential in App.xaml";                
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 
@@ -140,7 +181,49 @@
 
         private void On_Navigated(object sender, NavigationEventArgs e)
         {
-            NavView.IsBackEnabled = ContentFrame.CanGoBack;            
+            NavView.IsBackEnabled = ContentFrame.CanGoBack;
+        }
+
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            var parameter = (string)e.Parameter;
+
+            if(!string.IsNullOrEmpty(parameter))
+            {
+                await LoginUser();
+
+                switch (parameter)
+                {                   
+                    case "RecentFiles":
+                        ContentFrame.Navigate(typeof(RecentOneDriveFiles));
+                        break;
+                    case "UploadFile":
+                        ContentFrame.Navigate(typeof(UploadFileToOneDrive));
+                        break;
+                    case "DownloadFile":
+                        ContentFrame.Navigate(typeof(DownloadOneDriveFile));
+                        break;
+                    case "ContentFile":
+                        ContentFrame.Navigate(typeof(ContentFileOneDrive));
+                        break;
+                    case "OutlookContacts":
+                        ContentFrame.Navigate(typeof(OutlookContacts));
+                        break;
+                    case "ScheduleEvent":
+                        ContentFrame.Navigate(typeof(ScheduleEventOutlook));
+                        break;
+                    case "UserExtension":
+                        ContentFrame.Navigate(typeof(UserExtension));
+                        break;
+                    case "SaveAppData":
+                        ContentFrame.Navigate(typeof(SaveAppData));
+                        break;
+                    case "Activity":
+                        ContentFrame.Navigate(typeof(ActivityGraph));
+                        break;
+                }
+            }
         }
     }
 }

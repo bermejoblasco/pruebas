@@ -23,6 +23,11 @@
             <NavigationViewItem Name="UploadFile" x:Uid="UploadFile" Icon="AllApps" Content="Upload file to OneDrive" Tag="UploadFile" Visibility="Collapsed"/>
             <NavigationViewItem Name="DownloadFile" x:Uid="DownloadFile" Icon="AllApps" Content="Download file from OneDrive" Tag="DownloadFile" Visibility="Collapsed"/>
             <NavigationViewItem Name="ContentFile" x:Uid="ContentFile" Icon="AllApps" Content="Convert content from OneDrive" Tag="ContentFile" Visibility="Collapsed"/>
+            <NavigationViewItem Name="SaveAppData" x:Uid="SaveAppData" Icon="AllApps" Content="Save App Data in OneDrive" Tag="SaveAppData" Visibility="Collapsed"/>
+            <NavigationViewItem Name="UserExtension" x:Uid="UserExtension" Icon="AllApps" Content="Add User Extension" Tag="UserExtension" Visibility="Collapsed"/>
+            <NavigationViewItem Name="OutlookContacts" x:Uid="OutlookContacts" Icon="AllApps" Content="Outlook Contacts" Tag="OutlookContacts" Visibility="Collapsed"/>
+            <NavigationViewItem Name="ScheduleEvent" x:Uid="ScheduleEvent" Icon="AllApps" Content="Schedule event in Outlook" Tag="ScheduleEvent" Visibility="Collapsed"/>
+            <NavigationViewItem Name="Activity" x:Uid="Activity" Icon="AllApps" Content="Add in TimeLine" Tag="Activity" Visibility="Collapsed"/>
         </NavigationView.MenuItems>
 
         <Frame x:Name="ContentFrame" Margin="24">

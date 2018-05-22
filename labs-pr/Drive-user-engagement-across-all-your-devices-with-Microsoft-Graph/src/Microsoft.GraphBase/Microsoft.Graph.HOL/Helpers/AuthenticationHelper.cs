@@ -14,7 +14,11 @@
         public static string[] Scopes = {
             "User.Read",
             "Mail.Send",
-            "Files.ReadWrite" };
+            "Files.ReadWrite",
+            "Contacts.Read",
+            "Calendars.ReadWrite",
+            "UserActivity.ReadWrite.CreatedByApp"
+        };
 
         public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);
 
@@ -27,9 +31,8 @@
         // acquire the token silently. If that fails, then we try to acquire the token by prompting the user.
         public static GraphServiceClient GetAuthenticatedClient()
         {
-            throw new NotImplementedException();
+           throw new NotImplementedException();
         }
-
 
         /// <summary>
         /// Get Token for User.

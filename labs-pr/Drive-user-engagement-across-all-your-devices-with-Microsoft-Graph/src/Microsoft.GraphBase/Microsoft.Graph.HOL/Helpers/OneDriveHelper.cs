@@ -14,36 +14,22 @@
     {
         public static async Task<List<DriveItem>> GetRecentItems()
         {
-            //throw new NotImplementedException();            
-
-            try
-            {
-                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
-                var onedrive = await graphClient.Me.Drive.Recent().Request().GetAsync();
-                return onedrive.Take(10).ToList();
-            }
-
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Error get recent files in OneDrive: " + ex.Message);
-                throw;
-            }
+            throw new NotImplementedException();
         }
 
         public static async Task UploadItem(StorageFile storageFile)
         {
             throw new NotImplementedException();
-
         }
 
         public static async Task<Stream> DownloadFile(DriveItem driveItem)
         {
-            throw new NotImplementedException();           
+            throw new NotImplementedException();
         }
 
         public static async Task<Stream> ConvertContetPDF(DriveItem driveItem)
         {
-            throw new NotImplementedException();            
+            throw new NotImplementedException();
         }
 
         private static bool ValidateExtension(string filename)
@@ -54,7 +40,7 @@
 
         public static async Task<List<DriveItem>> GetItems(int numberOfElements)
         {
-            throw new NotImplementedException();          
+            throw new NotImplementedException();
         }
 
         private static async Task<List<DriveItem>> GetNameFiles(GraphServiceClient graphClient, List<DriveItem> filesName, IDriveItemChildrenCollectionPage items, int numberOfElements)

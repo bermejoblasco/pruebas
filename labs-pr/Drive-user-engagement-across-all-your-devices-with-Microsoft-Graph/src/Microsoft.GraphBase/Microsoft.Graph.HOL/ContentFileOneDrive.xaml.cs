@@ -9,6 +9,7 @@ namespace Microsoft.Graph.HOL
     using Windows.Storage;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
+    using Windows.UI.Xaml.Navigation;
 
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -27,7 +28,7 @@ namespace Microsoft.Graph.HOL
         {
             this.InitializeComponent();
             Progress.IsActive = true;
-        }
+        }      
 
         private async void Page_Loading(FrameworkElement sender, object args)
         {
