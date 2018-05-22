@@ -67,8 +67,8 @@ Now we ready to make calls to the API, we will call OneDrive API to show the nam
 
 For call to **OneDrive** follow the next steps:
 
-- Go to OneDriveHelper.cs
-- Delete the code
+- Go to OneDriveHelper.cs.
+- Delete the code.
 	
 	`throw new NotImplementedException();`
 -  Add the this code:
@@ -96,4 +96,4 @@ There are few interesting points in the code before:
 - We call the authentication method to obtain the Graph context with the authenticated user.
 - After that we can access the different GRAPH resources of the user.
 - In our case we access the root of OneDrive.
-- And what we do is go searching the files by going through all the folders with the recursive GetNameFiles method
+- And what we do is go searching the files by going through all the folders with the recursive GetNameFiles method.
