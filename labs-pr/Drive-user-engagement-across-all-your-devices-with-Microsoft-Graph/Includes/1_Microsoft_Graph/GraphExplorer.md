@@ -6,7 +6,7 @@ We are going to make an overview to this tool.
 
 ## Sign in Graph Explorer
 
-Go to **[Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)** and click in Sign in Wiht Microsoft button. 
+Go to **[Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)** and click in Sign in With Microsoft button. 
 
  ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/LoginGraphApi.png) 
 
@@ -15,23 +15,19 @@ Go to **[Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explo
 After the login you can see that on the left side we have several options:
 
 
-- We can modify our permissions
+- We can modify our permissions.
+- We can log out.
+- We can see the APIS with some services by default but we can add APIS from show more samples button.
 
+On the right side we have the view with everything we need to launch the calls against the APIS and see the requests and the response.
 
-- We can log out
-
-
-- We can see the APIS, by default we show some services by default but we can add them all by adding APIS from show more samples.
-
-On the right side we have the view with everything we need to launch the calls against the APIS and see the requests and the results that are sent
-
-Now we will see how test Graph API in Microsoft Graph Explorer to get all files in One Drive and how we can manage our pemrisions.
+Now we will see how test Graph API in Microsoft Graph Explorer to get all files in One Drive and how we can manage our permissions.
 
 ## Modify user premissions
 
 In order to use and access the different services, we can modify the permissions of our user to give him the necessary privileges to be able to use the desired operations.
 
-- Choose Modify Permissions
+- Choose Modify Permissions.
 
  ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/GEModifyPermissions.png) 
 
