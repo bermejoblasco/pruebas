@@ -8,7 +8,7 @@ In this section we will see how we can do it.
 
 ## Add custom data to resource	
 
-In UWP project go to **UserExtensionHelper.cs** SetExtension method and follow the steps:
+In UWP project go to **Helpers/UserExtensionHelper.cs** SetExtension method and follow the steps:
 
 - Delete the code
 
@@ -76,7 +76,7 @@ You can see the next code in **UserExtension.xaml.cs**
             }
         }
 
-The code to call Microsoft Graph API to get extension are in **UserExtensionHelper.cs** GetOpenExtensionsForMe method:
+The code to call Microsoft Graph API to get extension are in **Helpers/UserExtensionHelper.cs** GetOpenExtensionsForMe method:
 
  		public static async Task<List<ExtensionModel>> GetOpenExtensionsForMe()
         {
@@ -98,3 +98,6 @@ The code to call Microsoft Graph API to get extension are in **UserExtensionHelp
                 throw;
             }
         }
+
+   
+> **Note:** The Maximum number of extensions by applications is two.

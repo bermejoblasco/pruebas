@@ -43,7 +43,16 @@
 
         public static async Task DeleteOpenExtensionForMe(string extensionName)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                await graphClient.Me.Extensions[extensionName].Request().DeleteAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error to delete extension in graph: " + ex.Message);
+                throw;
+            }
         }
 
         public static async Task CreateActivity()
