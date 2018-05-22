@@ -29,6 +29,12 @@ namespace Microsoft.Graph.HOL
                 openPicker.FileTypeFilter.Add(".pdf");
 
                 var file = await openPicker.PickSingleFileAsync();
+                var basicProperty = await file.GetBasicPropertiesAsync();
+                if (basicProperty.Size > 2000000)
+                {
+                    InfoText.Text = "The file can not exceed 2 MB";
+                    return;
+                }
                 Progress.IsActive = true;
                 uploadBtn.IsEnabled = false;
                 await OneDriveHelper.UploadItem(file);

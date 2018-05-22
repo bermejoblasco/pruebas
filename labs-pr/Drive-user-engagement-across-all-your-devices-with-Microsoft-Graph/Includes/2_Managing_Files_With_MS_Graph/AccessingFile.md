@@ -13,14 +13,14 @@ In UWP project go to **Helpers/OneDriverHelper.cs** GetRecentItems method and fo
 
 - Add the following code
 
-            List<string> filesName = new List<string>();
+         	List<DriveItem> filesName = new List<DriveItem>();
 
             try
             {
                 var graphClient = AuthenticationHelper.GetAuthenticatedClient();
 
                 var onedrive = graphClient.Me.Drive.Recent().Request().GetAsync().Result;
-                filesName = onedrive.Take(10).Select(x => x.Name).ToList();
+                filesName = onedrive.Take(10).ToList();
                 return filesName;
             }
 
@@ -29,6 +29,10 @@ In UWP project go to **Helpers/OneDriverHelper.cs** GetRecentItems method and fo
                 Debug.WriteLine("Error get recent files in One Drive: " + ex.Message);
                 throw;
             }
+
+After get graphClient we can access to OneDrive via graphClient.Me.Drive and via Recent Method get the most recent files.
+
+
 - Build and run the application.
 - Click in Log in button to authenticate.
 - After the authentication appears a **Recent File OneDrive** button. Click in this button.

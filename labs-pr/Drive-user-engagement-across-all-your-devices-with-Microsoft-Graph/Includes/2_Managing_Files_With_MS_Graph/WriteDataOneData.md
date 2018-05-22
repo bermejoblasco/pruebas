@@ -7,7 +7,7 @@ Let's go for it
 
 ## Set file in OneDrive from Graph API.
 
-In UWP project go to **OneDriverHelper.cs** UploadItem method and follow the steps:
+In UWP project go to **Helpers/OneDriverHelper.cs** UploadItem method and follow the steps:
 
 - Delete the code
 
@@ -50,7 +50,7 @@ In UWP project go to **OneDriverHelper.cs** UploadItem method and follow the ste
 
 - After the authentication choose ** Upload file to OneDrive ** button.
 
-- Click in ** Select File** button.
+- Click in ** Select File** button. Max file size 2 Mb.
 
 - Select file from your computer.
 
