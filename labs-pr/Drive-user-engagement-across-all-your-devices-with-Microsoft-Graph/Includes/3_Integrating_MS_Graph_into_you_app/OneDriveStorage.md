@@ -2,13 +2,13 @@
 
 Now that we have learned how to interact with OneDrive, one of the options we have is to save the information of our application in OneDrive: settings, images, documents, backups ..., 
 
-So that if we install the application in another device we can recover all the information and settings we had.
+So, if we install the application in another device we can recover all the information and settings we had.
 
 Specifically in this section we are going to simulate how to save settings in OneDrive and how to recover them after a clean installation.
 
 ## Set settings app in OneDrive
 
-In UWP project go to **DataSyncHelper.cs** SaveSettingsInOneDrive method and follow the steps:
+In UWP project go to **Helpers/DataSyncHelper.cs** SaveSettingsInOneDrive method and follow the steps:
 
 - Delete the code
 
@@ -16,7 +16,7 @@ In UWP project go to **DataSyncHelper.cs** SaveSettingsInOneDrive method and fol
 
 - Add the following code
 
-          try
+          	try
             {
                 var model = JsonConvert.SerializeObject(settingsModel);
                 var graphClient = AuthenticationHelper.GetAuthenticatedClient();
@@ -56,7 +56,7 @@ In UWP project go to **DataSyncHelper.cs** SaveSettingsInOneDrive method and fol
 
 Now we need uninstall our UWP app. Search Microsfot.Graph.HOL App, right click and uninstall.
 
-No in UWP project go to **DataSyncHelper.cs** GetSettingsInOneDrive method and follow the steps:
+Now in UWP project go to **Helpers/DataSyncHelper.cs** GetSettingsInOneDrive method and follow the steps:
 
 - Delete the code
 
@@ -102,4 +102,4 @@ No in UWP project go to **DataSyncHelper.cs** GetSettingsInOneDrive method and f
 
 - Select **Save App Data in OneDrive** option in menu.
 
-- You see the option you select before selected.
+- You see the options you selected before.
