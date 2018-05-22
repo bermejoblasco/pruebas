@@ -2,17 +2,17 @@
 
 Hand-on lab where you will learn the basics of Microsoft Graph and how to integrate them in your applications.
 
-- [Microsfot Graph](1_Microsoft_Graph/README.md)
+- [Microsfot Graph](1_Microsoft_Graph/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/README.md)
 	- Intro to graph
 	- Getting Started with Quick Start
 	- Graph Explorer
 	- Sample API calls
 	- Adding API calls to your project
-- [Managing Files With MS Graph](2-_Managing_Files_With_MS_Graph/README.md)
+- [Managing Files With MS Graph](Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/2_Managing_Files_With_MS_Graph/README.md)
 	- Accessing file data
 	- Writing data to one drive
 	- Accessing content of files  
-- [Integrating MS Graph into you app](3-Integrating_MS_Graph_into_you_app/README.md)
+- [Integrating MS Graph into you app](Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/3_Integrating_MS_Graph_into_you_app/README.md)
 	- Using OneDrive for app data storage
 	- Writing data to the MS Graph
 	- Integrating with office
