@@ -2,15 +2,15 @@
 
 ## Brief explanation of what is Graph
 
-Microsoft Graph is an API built in Office 365 that allows developers to integrate with devices, Office 365 and Azure and develop more intelligent and productive applications.
+Microsoft Graph is an API built in Office 365 that allows developers to integrate with devices, Office 365, Azure and develop more intelligent and productive applications.
 
-Thanks to Microsoft Graph we can integrate services such as Azure AD, OneDrive, Outlook, Excel, OneNote, Intune, SharePoint or Planner among others.
+Thanks to Microsoft Graph we can integrate services such as Azure AD, OneDrive, Outlook, Excel, OneNote, Intune, SharePoint or Planner and others Office products.
   
 The best thing about Graph is that the integration is simple via API REST, with very few lines of code you can have access to a large amount of information to consume it or to modify it.
 
-## Why its usefulness
+## Why is it useful?
 
-Microsoft Graph, by allowing us to connect with all our Office 365 data, allows us to integrate this data into our applications easily, quickly and safely.
+Microsoft Graph, allowing us to connect with all our Office 365 data, allows us to integrate this data into our applications easily, quickly and safely.
 
 Thanks to this Microsoft Grpah allows us to implement:
 

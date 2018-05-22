@@ -2,7 +2,7 @@
 
  - [Intro to graph](Introtograph.md)
 	 - Brief explanation of what is Graph
-	 - Why its usefulness
+	 - Why is it useful?
 	 - Interest links
  - [Getting Started with Quick Start](GettingStartedWithQuickStart.md)
 	 - Setting up app id
