@@ -21,7 +21,8 @@ namespace Microsoft.Graph.HOL
             try
             {
                 Progress.IsActive = true;
-                await UserExtensionHelper.CreateActivity();                
+                await UserExtensionHelper.CreateActivity();
+                InfoText.Text = $"Activity Created see Timeline";
             }
             catch (Exception ex)
             {

@@ -4,7 +4,7 @@ But not only can we integrate with OneDrive, we can also integrate with the enti
 
 ## Get Personal contacts from outlook
 
-In UWP project go to **OutlookHeñper.cs** GetContacts method and follow the steps:
+In UWP project go to **Helpers/OutlookHelper.cs** GetContacts method and follow the steps:
 
 - Delete the code
 
@@ -36,7 +36,7 @@ In UWP project go to **OutlookHeñper.cs** GetContacts method and follow the ste
 
 ## Create a Schedule events in outlook 
 
-In UWP project go to **OutlookHeñper.cs** SetAppintment method and follow the steps:
+In UWP project go to **Helpers/OutlookHelper.cs** SetAppintment method and follow the steps:
 
 - Delete the code
 
@@ -76,10 +76,10 @@ In UWP project go to **OutlookHeñper.cs** SetAppintment method and follow the s
 - Click in Log in button.
 
 - Select **Scheule event in Outlook** option in menu
+.
+- Add a subject, select init date and hour and select end date and hour.
 
-- Add a subject, select init date and hour and select end date and hou
-
-- Click in Sechedule Event
+- Click in Sechedule Event.
 
 ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/EventCalendar.png) 
 

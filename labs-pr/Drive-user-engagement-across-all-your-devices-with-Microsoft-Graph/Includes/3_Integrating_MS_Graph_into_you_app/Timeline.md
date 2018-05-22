@@ -1,21 +1,19 @@
 # Writing to the Timeline
 
-Timeline is a new feature in Microsoft Graph API that eneable to store the state of you application when a person want to continue those activiites accros multiple devices.
+Timeline is a new feature in Microsoft Graph API that eneable to store the state of you application when a person want to continue those activiites accros multiple devices.  
 To do that, Mircosoft Graph API enable a UserActivites that enable user back into the applications.
 In this module learn how works UserActivities and show timeline in Windows.
 
 ## Create and Save an Activity in Windows
 
-In UWP project go to **UserExtensionHelper.cs** CreateActivity method and follow the steps:
+In UWP project go to **Helpers/UserExtensionHelper.cs** CreateActivity method and follow the steps:
 
 - Delete the code
 
 	`throw new NotImplementedException();`
 
 - Add the following code
-
-       	public static async Task CreateActivity()
-        {
+       	
             try
             {           
                 UserActivitySession currentActivity;
@@ -37,8 +35,7 @@ In UWP project go to **UserExtensionHelper.cs** CreateActivity method and follow
             {
                 Debug.WriteLine("Error to create activity in graph: " + ex.Message);
                 throw;
-            }
-        }
+            }        
 
 
 ## Create a Session in Windows
