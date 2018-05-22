@@ -18,10 +18,10 @@ Thanks to this Microsoft Grpah allows us to implement:
  - Suggest the best time for the next team meeting scan your calendar.
  - Create a Team in Microsoft Teams for an existing office 365 Group
  - Send a notification when people are added to Active Directory and automatically kick off employee on-boarding workflows.
- -  Continue wiht a doucment in other device just you left off.
- - Create a tiemline wiht all your activity. 
+ -  Continue with a document in other device just you left off.
+ - Create a timeline with all your activity. 
    
-These are some examples of what can be done with grpah, but you can see there are many scenarios where you can apply.
+These are some examples of what can be done with Graph, but you can see there are many scenarios where you can apply.
 
 ## Interest links
 
