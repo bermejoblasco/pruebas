@@ -8,7 +8,7 @@ To do this we will create a console application to which we add the necessary co
 
 Download the base project from [here](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/src/Microsoft.Graph.HOL.ConsoleBase/)
 
-## A uthenticate user
+## Authenticate user
 
 Now let's add the authentication.
 
@@ -52,9 +52,10 @@ Now let's add the authentication.
             return graphClient;
 
 You can see that we use the Graph Service Client to authenticate, obtain the token, and later access all of Graph resources through this class found in the Microsoft.Graph NuGet package.
+
 The method **GetTokenForUserAsync** obtain the access token after the user are authenticated to send in Authentication header when call the API.
 
-Now you can build and run the process and the application aks for user credentials via Graph.
+Now you can build and run the process and the application ask for user credentials via Graph.
 When you are authenticated, please answer **N** to the answer **Would you like to see your OneDrive items?[Y] Yes or [N] No**
 
 
