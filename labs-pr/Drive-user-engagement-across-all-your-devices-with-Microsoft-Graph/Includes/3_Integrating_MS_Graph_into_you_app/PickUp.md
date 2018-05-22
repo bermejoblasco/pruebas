@@ -21,7 +21,7 @@ In the module before, when we create the Activity we have this line:
 
 In activation Uri pass a option, at this point always is empty. Go to save where we are.
 
-In UWP project go to **UserExtensionHelper.cs** PickupWhereYouLeft method and follow the steps:
+In UWP project go to **Helpers/UserExtensionHelper.cs** PickupWhereYouLeft method and follow the steps:
 
 - Add the code
 
