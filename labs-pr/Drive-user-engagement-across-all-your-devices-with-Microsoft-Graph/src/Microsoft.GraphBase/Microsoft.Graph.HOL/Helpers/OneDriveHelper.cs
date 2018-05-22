@@ -40,7 +40,23 @@
 
         public static async Task<List<DriveItem>> GetItems(int numberOfElements)
         {
-            throw new NotImplementedException();
+            List<DriveItem> filesName = new List<DriveItem>();
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                var onedrive = await graphClient.Me.Drive.Root.Children.Request().GetAsync();
+
+                filesName = await GetNameFiles(graphClient, filesName, onedrive, numberOfElements);
+
+                return filesName;
+            }
+
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Could not create a graph client: " + ex.Message);
+                throw;
+            }
         }
 
         private static async Task<List<DriveItem>> GetNameFiles(GraphServiceClient graphClient, List<DriveItem> filesName, IDriveItemChildrenCollectionPage items, int numberOfElements)

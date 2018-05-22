@@ -1,10 +1,10 @@
 # Accessing content of files
 
-In this module we will see how we can download **OneDrive** documents with **Microsoft Graph API ** and we will also see how we can download **OneDrive** documents in **another format** of the original.
+In this module we will see how we can download OneDrive documents with Microsoft Graph API and we will also see how we can download OneDrive documents in **another format** of the original.
 
 ## Download content file from OneDrive
 
-In UWP project go to **OneDriverHelper.cs** DownloadFile method and follow the steps:
+In UWP project go to **Helpers/OneDriverHelper.cs** DownloadFile method and follow the steps:
 
 - Delete the code
 
@@ -12,7 +12,7 @@ In UWP project go to **OneDriverHelper.cs** DownloadFile method and follow the s
 
 - Add the following code
 
-           try
+          	try
             {
                 var graphClient = AuthenticationHelper.GetAuthenticatedClient();                
                 return await graphClient.Me.Drive.Items[driveItem.Id].Content.Request().GetAsync();
@@ -25,19 +25,19 @@ In UWP project go to **OneDriverHelper.cs** DownloadFile method and follow the s
 
 - Build and run the application.
 
-- Click in Log in button to Download File. Show the 10 first items in OneDrive.
+- Click in Log in button.
 
-- Select **Download file from OneDrive** option in menu
+- Select **Download file from OneDrive** option in menu.Show the 10 first items in OneDrive.
 
 - Select the file and click download. The file will be save in Pictures Folder.
 
-- Go to Pictures Folder and see that the file is there and open it.
+- Go to **Pictures Folder** and see that the file is there and open it.
 
 ![alt text](/labs-pr/Drive-user-engagement-across-all-your-devices-with-Microsoft-Graph/media/DownloadFile.png) 
 
 ## Convert content from OneDrive file
 
-In UWP project go to **OneDriverHelper.cs** ConvertContetPDF method and follow the steps:
+In UWP project go to **Helpers/OneDriverHelper.cs** ConvertContetPDF method and follow the steps:
 
 - Delete the code
 
@@ -71,9 +71,9 @@ In UWP project go to **OneDriverHelper.cs** ConvertContetPDF method and follow t
 
 - Build and run the application.
 
-- Click in Log in button to Download File. Show the 10 first items in OneDrive.
+- Click in Log in button.
 
-- Select **Convert content from OneDrive** option in menu
+- Select **Convert content from OneDrive** option in menu.
 
 - Select a file with one of this extensions: doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx
 
