@@ -5,7 +5,8 @@ Now we have an overview about how work with Microsoft Graph. Now we will back to
 ## Add user authentication with Graph
 Open UWP code in Visual Studio and follow this steps.
 
-- Go to AuthenticationHelper.cs
+- Go to Helpers/AuthenticationHelper.cs
+- In GetAuthenticatedClient() Method
 - Delete the code
 
    	`throw new NotImplementedException();`
@@ -40,4 +41,4 @@ As you can see it is exactly the same code that we used in the console applicati
 
 > **Note:** In previous steps we had configured the **ClientID** and **ReturnURL** field in the App.xaml file, check that you have added them correctly.
 
-Now you run the application and click in **Log in** button to authenticate.
+Now you run the application and click in **Log in** menu button to authenticate.
