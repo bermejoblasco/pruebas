@@ -1,11 +1,11 @@
 # Accessing file data
 
-What we are going to do in this module is to bring us the list of the most recent OneDrive documents,. Complementing the knowledge acquired in the Sample API Calls Module.
+What we are going to do in this module is to bring us the list of the most recent OneDrive documents, complementing the knowledge acquired in the Sample API Calls Module.
 
 
 ## Get my recent files from OneDrive from Graph API
 
-In UWP project go to **OneDriverHelper.cs** GetRecentItems method and follow the steps:
+In UWP project go to **Helpers/OneDriverHelper.cs** GetRecentItems method and follow the steps:
 
 - Delete the code
 
